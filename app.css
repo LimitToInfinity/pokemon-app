@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
   License: none (public domain)
@@ -52,18 +54,36 @@ table {
 body {
   height: 100vh;
   width: 100vw;
-  background-color: yellow;
+  background-color: #ffffbd;
+  font-family: Nerko One, cursive, sans-serif;
 }
 
 header {
   padding-top: 1rem;
   padding-bottom: 2rem;
+  background-color: #ffffd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+#logo > img {
+  height: 70px;
+}
+
+nav {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+nav > a {
+  margin-right: 1rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 .loading {
@@ -86,13 +106,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 3px 3px 8px #dedf00;
+  box-shadow: 3px 3px 8px #efefa1;
   margin: 3rem;
 }
 
 .pokemon-card > h2 {
   height: 30%;
   font-weight: 600;
+  font-size: 1.1rem;
   margin-left: 0.7rem;
   margin-top: 0.5rem;
 }
