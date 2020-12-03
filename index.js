@@ -6,6 +6,9 @@ fetch("http://localhost:3000/pokemons")
 
 function displayPokemons(pokemons) {
   pokemons.forEach(pokemon => showPokemon(pokemon));
+
+  const loading = document.querySelector('.loading');
+  loading.remove();
 }
 
 function showPokemon(pokemon) {
